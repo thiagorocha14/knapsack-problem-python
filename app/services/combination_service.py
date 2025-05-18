@@ -7,7 +7,7 @@ class CombinationService:
     def create_combination(index, products: list[ProductDTO]):
 
         bases = [product.quantity for product in products]
-
+        print(f"bases: {bases}")
         selected_products = CombinationService.select_products(index,bases)
         price, weight = CombinationService.calculate_price_and_weight(selected_products, products)
 

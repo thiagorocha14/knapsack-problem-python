@@ -1,5 +1,5 @@
 services:
-  web:
+  knapsack-api-python:
     image: knapsack-python-api
     build: .
     ports:
